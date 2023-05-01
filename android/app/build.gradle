@@ -1,5 +1,6 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 import com.android.build.OutputFile
 
@@ -22,7 +23,7 @@ react {
     //   The list of variants to that are debuggable. For those we're going to
     //   skip the bundling of the JS bundle and the assets. By default is just 'debug'.
     //   If you add flavors like lite, prod, etc. you'll have to list your debuggableVariants.
-    // debuggableVariants = ["liteDebug", "prodDebug"]
+    // debuggableVariants = ["developmentDebug", "productionDebug"]
 
     /* Bundling */
     //   A list containing the node command and its flags. Default is just 'node'.
@@ -88,6 +89,22 @@ def reactNativeArchitectures() {
     return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
 }
 
+def isNewArchitectureEnabled() {
+    def value = project.getProperties().get("newArchEnabled")
+    return value
+}
+
+project.ext.envConfigFiles = [
+    debug: ".env",
+    developmentdebug:".env.dev",
+    developmentrelease:"env.dev",
+    stagingdebug:".env.staging",
+    stagingrelease:"env.staging",
+    productiondebug:".env.production",
+    productionrelease:"env.production",
+    release: ".env.production",
+]
+
 android {
     ndkVersion rootProject.ext.ndkVersion
 
@@ -99,7 +116,25 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName project.env.get("VERSION_NAME")
+
+        if (isNewArchitectureEnabled()) {
+            // We configure the CMake build only if you decide to opt-in for the New Architecture.
+            externalNativeBuild {
+                cmake {
+                    arguments "-DPROJECT_BUILD_DIR=$buildDir",
+                        "-DREACT_ANDROID_DIR=$rootDir/../node_modules/react-native/ReactAndroid",
+                        "-DREACT_ANDROID_BUILD_DIR=$rootDir/../node_modules/react-native/ReactAndroid/build",
+                        "-DNODE_MODULES_DIR=$rootDir/../node_modules",
+                        "-DANDROID_STL=c++_shared"
+                }
+            }
+            if (!enableSeparateBuildPerCPUArchitecture) {
+                ndk {
+                    abiFilters (*reactNativeArchitectures())
+                }
+            }
+        }
     }
 
     splits {
@@ -128,6 +163,27 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        production {
+            dimension "version"
+            resValue "string", "build_config_package", "com.agilworld.demo"
+            ndk {
+                abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+            }
+        }
+
+        development {
+            dimension "version"
+            applicationIdSuffix ".dev"
+            resValue "string", "build_config_package", "com.agilworld.demo"
+            versionName defaultConfig.versionName + "-Dev"
+            ndk {
+                abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+            }
         }
     }
 
@@ -167,4 +223,5 @@ dependencies {
     }
 }
 
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle");
+applyNativeModulesAppBuildGradle(project)
