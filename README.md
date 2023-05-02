@@ -31,6 +31,7 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - Deep-linking
 - Alert Component
 - Modal Component
+- CI/CD eslint
 - etc
 
 # Please create .env & .env.production with some keys below
