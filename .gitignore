@@ -68,3 +68,4 @@ yarn-error.log
 .env.production
 .env.staging
 .env.development
+*_pid*.log

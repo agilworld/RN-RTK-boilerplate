@@ -1,6 +1,7 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 
 import com.android.build.OutputFile
 
@@ -96,8 +97,8 @@ def isNewArchitectureEnabled() {
 
 project.ext.envConfigFiles = [
     debug: ".env",
-    developmentdebug:".env.dev",
-    developmentrelease:"env.dev",
+    developmentdebug:".env.development",
+    developmentrelease:"env.development",
     stagingdebug:".env.staging",
     stagingrelease:"env.staging",
     productiondebug:".env.production",
@@ -156,6 +157,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            //resValue "string", "CodePushDeploymentKey", project.env.get("CODE_PUSH_KEY").toString();
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
@@ -171,6 +173,7 @@ android {
         production {
             dimension "version"
             resValue "string", "build_config_package", "com.agilworld.demo"
+            resValue "string", "CodePushDeploymentKey", project.env.get("CODE_PUSH_KEY").toString();
             ndk {
                 abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
             }
@@ -180,7 +183,19 @@ android {
             dimension "version"
             applicationIdSuffix ".dev"
             resValue "string", "build_config_package", "com.agilworld.demo"
+            resValue "string", "CodePushDeploymentKey", project.env.get("CODE_PUSH_KEY").toString();
             versionName defaultConfig.versionName + "-Dev"
+            ndk {
+                abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+            }
+        }
+
+        staging {
+            dimension "version"
+            applicationIdSuffix ".staging"
+            resValue "string", "build_config_package", "com.agilworld.demo"
+            // resValue "string", "CodePushDeploymentKey", project.env.get("CODE_PUSH_KEY").toString();
+            versionName defaultConfig.versionName + "-Staging"
             ndk {
                 abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
             }
