@@ -5,6 +5,7 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - React 0.71.*
 - Redux.js toolkit
 - Redux Persist enabled (async storage)
+- React Navigation 6.0
 - Side-effect w/ Redux saga
 - Action Creators
 - API services
@@ -43,3 +44,8 @@ ONE_SIGNAL_KEY=(one signal key)
 SENTRY_DSN=(sentry dsn)
 SENTRY_ENVIRONMENT=production
 ```
+# References
+- Ignite Andross: https://github.com/infinitered/ignite-andross
+- Ingnite latest : https://github.com/infinitered/ignite
+- Redux JS Toolkit : https://redux-toolkit.js.org/
+- React Navigation 6.0 : https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/
