@@ -1,3 +1,5 @@
+import RNConfig from "react-native-config"
+
 export default {
-    API_URL:"https://jsonplaceholder/api/"
+    API_URL:RNConfig.API_URL
 }

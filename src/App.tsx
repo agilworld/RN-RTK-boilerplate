@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Provider } from "react-redux";
-import type {PropsWithChildren} from 'react';
+import CodePush from 'react-native-code-push';
 import {
   SafeAreaView,
   StatusBar,
@@ -16,38 +16,14 @@ import {
 import { PersistGate } from "redux-persist/integration/react"
 import { store, persistor } from "./Services/configureStore"
 import Loader from './Components/Loader';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+import RNConfig from "react-native-config"
 
 function App(): JSX.Element {
+  useEffect(()=>{
+    CodePush.sync({
+      deploymentKey:RNConfig.CODE_PUSH_KEY
+    })
+  },[])
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -70,6 +46,8 @@ function App(): JSX.Element {
   );
 }
 
+let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
+
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
@@ -89,4 +67,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default CodePush(codePushOptions)(App);
