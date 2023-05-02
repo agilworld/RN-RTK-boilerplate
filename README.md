@@ -46,6 +46,6 @@ SENTRY_ENVIRONMENT=production
 ```
 # References
 - Ignite Andross: https://github.com/infinitered/ignite-andross
-- Ingnite latest : https://github.com/infinitered/ignite
+- Ignite latest : https://github.com/infinitered/ignite
 - Redux JS Toolkit : https://redux-toolkit.js.org/
 - React Navigation 6.0 : https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/
