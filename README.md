@@ -1,4 +1,4 @@
-# React Native Redux.js Toolkit Boilperplate
+# React Native Redux.js Toolkit Boilerplate
 Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 
 # Features
@@ -26,7 +26,7 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - Code push integration
 - React Native Config for multi-purpose deployment dev, staging, prod etc.
 
-# Next Features
+# Future Things
 ### 3rd Party services
 - Code push sync progress with OTA updates
 - Auth Mechanism
@@ -50,7 +50,7 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - and more...
 
 ## Env
-Please create file .env, .env.production and .env.staging with some keys below
+Please create file `.env`, `.env.production` and `.env.staging` with some keys below
 ```
 API_URL=https://jsonplaceholder/api/
 CODE_PUSH_KEY=(code push key)
