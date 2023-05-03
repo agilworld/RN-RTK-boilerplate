@@ -23,19 +23,34 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - Multi-Languages
 - Debugger include: Reactotron config
 - Typescript types
-- Code push HOC
+- Code push integration
 - React Native Config for multi-purpose deployment dev, staging, prod etc.
 
 # Next Features
-- Code push sync scenario
+## 3rd Party services
+- Code push sync progress with OTA updates
+- Auth Mechanism
+    - Google
+    - Apple
+    - Linkedin
 - Push notif one-signal
-- Deep-linking
+- AppCenter Integration
+- Realm DB Integration
+- Detox Integration
+- Firebase crashlytics
+- Firebase analytics
+
+## In-house
+- Error Boundry component
+- HOC component
 - Alert Component
 - Modal Component
+- GraphQL client
 - CI/CD eslint
-- etc
+- and more...
 
-# Please create .env & .env.production with some keys below
+## Env
+Please create file .env, .env.production and .env.staging with some keys below
 ```
 API_URL=https://jsonplaceholder/api/
 CODE_PUSH_KEY=(code push key)
