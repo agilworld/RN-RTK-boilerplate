@@ -27,7 +27,7 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - React Native Config for multi-purpose deployment dev, staging, prod etc.
 
 # Next Features
-## 3rd Party services
+### 3rd Party services
 - Code push sync progress with OTA updates
 - Auth Mechanism
     - Google
@@ -40,7 +40,7 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - Firebase crashlytics
 - Firebase analytics
 
-## In-house
+### In-house
 - Error Boundry component
 - HOC component
 - Alert Component
