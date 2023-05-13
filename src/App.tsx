@@ -13,12 +13,15 @@ import RootContainer from './RootContainer';
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
+import { useFonts } from "expo-font"
 import { PersistGate } from "redux-persist/integration/react"
 import { store, persistor } from "./Services/configureStore"
 import Loader from './Components/Loader';
 import RNConfig from "react-native-config"
+import { customFontsToLoad } from "./Themes"
 
 function App(): JSX.Element {
+  const [ areFontsLoaded ] = useFonts(customFontsToLoad)
   useEffect(()=>{
     CodePush.sync({
       deploymentKey:RNConfig.CODE_PUSH_KEY
@@ -29,6 +32,8 @@ function App(): JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  if (!areFontsLoaded) return null
 
   return (
     <Provider store={store}>
