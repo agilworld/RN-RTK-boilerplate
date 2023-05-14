@@ -2,7 +2,6 @@
 // markdown file and add links from here
 
 import { Platform } from "react-native"
-
 import {
   Inter_100Thin as InterThin,
   Inter_200ExtraLight as InterExtraLight,

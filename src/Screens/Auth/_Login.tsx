@@ -1,6 +1,7 @@
 import React, {useState, useCallback, useEffect } from "react"
 import { 
     View,  
+    Text,
     SafeAreaView,
     TouchableOpacity,
     BackHandler,
@@ -13,6 +14,8 @@ import { TextField } from "../../Components/TextField"
 import { moderateScale } from "../../Libs/Scaling"
 import { setLogin, getUser } from "../../Redux/userRedux"
 import { getVersion, getBuildNumber } from "react-native-device-info"
+import Config from "../../Config"
+import {  colors } from "../../Themes"
 
 type FieldErrors = {
     username?:string,
@@ -126,7 +129,11 @@ export default function Login(props:any): JSX.Element {
                 {errors?.password ? <DefaultText style={{color:"red"}} variant="bodySmall">{errors?.password}</DefaultText> : null}         
 
                 <Button text={"Sign In"} style={{marginTop:25,paddingVertical:8,borderRadius:90}} onPress={onLogin} />
-                   
+
+
+                {Config.env !== "production" ? <View>
+                    <Text style={{color:colors.errorBackground}}>Not used in production</Text>
+                </View> : null}
             </View>
         </View>
     </SafeAreaView>)

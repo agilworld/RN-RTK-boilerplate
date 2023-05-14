@@ -51,7 +51,7 @@ export default function Home(props:any): JSX.Element {
             <Text variant="bodyLarge">Hai, Dian Afrial</Text>
             <DefaultText>Senin, 27 Maret 2023</DefaultText>
             <View style={{marginTop:20}}>
-                <View style={{flexDirection:"row"}}>
+                <View>
                     <Card style={{flexGrow:2}} mode="elevated">
                         <Card.Title title={"Pendapatan Saya"}
                             style={{borderBottomWidth:1,paddingBottom:0,borderBottomColor:"#ddd"}} />
@@ -80,7 +80,6 @@ export default function Home(props:any): JSX.Element {
                             </View>
                         </Card.Content>
                     </Card>
-                   
                 </View>
             </View>
            

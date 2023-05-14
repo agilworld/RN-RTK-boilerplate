@@ -1,4 +1,6 @@
+import Config from "react-native-config"
 export interface ConfigBaseProps {
+    env:string,
     usePersist: boolean,
     useReactotron:boolean,
     persistNavigation: "always" | "dev" | "prod" | "never"
@@ -9,6 +11,7 @@ export interface ConfigBaseProps {
 
   
 const baseConfig: ConfigBaseProps = {
+    env: Config.ENV,
     usePersist: true,
     useReactotron:__DEV__,
     reduxLogging:__DEV__, 
