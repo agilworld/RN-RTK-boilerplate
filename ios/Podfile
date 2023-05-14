@@ -27,8 +27,8 @@ ENVFILES = {
   'Release' => '$(PODS_ROOT)/../../.env.production',
   'StagingRelease' => '$(PODS_ROOT)/../../.env.staging',
   'StagingDebug' => '$(PODS_ROOT)/../../.env.staging',
-  'DevRelease' => '$(PODS_ROOT)/../../.env.dev',
-  'DevDebug' => '$(PODS_ROOT)/../../.env.dev',
+  'DevRelease' => '$(PODS_ROOT)/../../.env.development',
+  'DevDebug' => '$(PODS_ROOT)/../../.env.development',
 }
 
 target 'AgilworldDemo' do

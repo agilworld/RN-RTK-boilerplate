@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D1CC6132AC8297885636D6 /* Pods-AgilworldDemo-AgilworldDemoTests.stagingrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo-AgilworldDemoTests.stagingrelease.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo-AgilworldDemoTests/Pods-AgilworldDemo-AgilworldDemoTests.stagingrelease.xcconfig"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* AgilworldDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgilworldDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AgilworldDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgilworldDemoTests.m; sourceTree = "<group>"; };
@@ -39,15 +40,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AgilworldDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AgilworldDemo/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-AgilworldDemo-AgilworldDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AgilworldDemo-AgilworldDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2FD9239A118AEFB8F75891 /* Pods-AgilworldDemo.stagingrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo.stagingrelease.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo/Pods-AgilworldDemo.stagingrelease.xcconfig"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-AgilworldDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo.debug.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo/Pods-AgilworldDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-AgilworldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo.release.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo/Pods-AgilworldDemo.release.xcconfig"; sourceTree = "<group>"; };
+		579926990F8FF62B08DB1856 /* Pods-AgilworldDemo.devrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo.devrelease.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo/Pods-AgilworldDemo.devrelease.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-AgilworldDemo-AgilworldDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo-AgilworldDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo-AgilworldDemoTests/Pods-AgilworldDemo-AgilworldDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-AgilworldDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AgilworldDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AgilworldDemo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AgilworldDemo-AgilworldDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo-AgilworldDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo-AgilworldDemoTests/Pods-AgilworldDemo-AgilworldDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		950B253CA3252F8B13E36FA4 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-AgilworldDemo-AgilworldDemoTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		A5289BD3F313957C1C6F4C53 /* Pods-AgilworldDemo-AgilworldDemoTests.stagingdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo-AgilworldDemoTests.stagingdebug.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo-AgilworldDemoTests/Pods-AgilworldDemo-AgilworldDemoTests.stagingdebug.xcconfig"; sourceTree = "<group>"; };
 		D5B0CFFF3BB9769B6EB868A2 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-AgilworldDemo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		D8913041939848359D0BEBD4 /* Pods-AgilworldDemo.devdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo.devdebug.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo/Pods-AgilworldDemo.devdebug.xcconfig"; sourceTree = "<group>"; };
+		DFADFACC02ED0E7DBC64C3A0 /* Pods-AgilworldDemo-AgilworldDemoTests.devdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo-AgilworldDemoTests.devdebug.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo-AgilworldDemoTests/Pods-AgilworldDemo-AgilworldDemoTests.devdebug.xcconfig"; sourceTree = "<group>"; };
+		EC1987E0CFF3889DD53E32DE /* Pods-AgilworldDemo-AgilworldDemoTests.devrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo-AgilworldDemoTests.devrelease.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo-AgilworldDemoTests/Pods-AgilworldDemo-AgilworldDemoTests.devrelease.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EFD1D9AABD5124BFBAAA41B1 /* Pods-AgilworldDemo.stagingdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgilworldDemo.stagingdebug.xcconfig"; path = "Target Support Files/Pods-AgilworldDemo/Pods-AgilworldDemo.stagingdebug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,14 @@
 				5709B34CF0A7D63546082F79 /* Pods-AgilworldDemo.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-AgilworldDemo-AgilworldDemoTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-AgilworldDemo-AgilworldDemoTests.release.xcconfig */,
+				EFD1D9AABD5124BFBAAA41B1 /* Pods-AgilworldDemo.stagingdebug.xcconfig */,
+				D8913041939848359D0BEBD4 /* Pods-AgilworldDemo.devdebug.xcconfig */,
+				2A2FD9239A118AEFB8F75891 /* Pods-AgilworldDemo.stagingrelease.xcconfig */,
+				579926990F8FF62B08DB1856 /* Pods-AgilworldDemo.devrelease.xcconfig */,
+				A5289BD3F313957C1C6F4C53 /* Pods-AgilworldDemo-AgilworldDemoTests.stagingdebug.xcconfig */,
+				DFADFACC02ED0E7DBC64C3A0 /* Pods-AgilworldDemo-AgilworldDemoTests.devdebug.xcconfig */,
+				00D1CC6132AC8297885636D6 /* Pods-AgilworldDemo-AgilworldDemoTests.stagingrelease.xcconfig */,
+				EC1987E0CFF3889DD53E32DE /* Pods-AgilworldDemo-AgilworldDemoTests.devrelease.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -575,7 +591,6 @@
 		};
 		1F7DE0C72A0FFF3C009D6289 /* DevRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AgilworldDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -641,7 +656,7 @@
 		};
 		1F7DE0C82A0FFF3C009D6289 /* DevRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AgilworldDemo.release.xcconfig */;
+			baseConfigurationReference = 579926990F8FF62B08DB1856 /* Pods-AgilworldDemo.devrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -654,7 +669,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "1.0-Dev";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -670,7 +685,7 @@
 		};
 		1F7DE0C92A0FFF3C009D6289 /* DevRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-AgilworldDemo-AgilworldDemoTests.release.xcconfig */;
+			baseConfigurationReference = EC1987E0CFF3889DD53E32DE /* Pods-AgilworldDemo-AgilworldDemoTests.devrelease.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -695,7 +710,6 @@
 		};
 		1F7DE0CA2A0FFF45009D6289 /* StagingRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AgilworldDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -761,7 +775,7 @@
 		};
 		1F7DE0CB2A0FFF45009D6289 /* StagingRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AgilworldDemo.release.xcconfig */;
+			baseConfigurationReference = 2A2FD9239A118AEFB8F75891 /* Pods-AgilworldDemo.stagingrelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -774,7 +788,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "1.0-Staging";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -790,7 +804,7 @@
 		};
 		1F7DE0CC2A0FFF45009D6289 /* StagingRelease */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-AgilworldDemo-AgilworldDemoTests.release.xcconfig */;
+			baseConfigurationReference = 00D1CC6132AC8297885636D6 /* Pods-AgilworldDemo-AgilworldDemoTests.stagingrelease.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -815,7 +829,6 @@
 		};
 		1F7DE0CD2A0FFFE0009D6289 /* DevDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AgilworldDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -888,7 +901,7 @@
 		};
 		1F7DE0CE2A0FFFE0009D6289 /* DevDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AgilworldDemo.debug.xcconfig */;
+			baseConfigurationReference = D8913041939848359D0BEBD4 /* Pods-AgilworldDemo.devdebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -902,7 +915,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "1.0-Dev";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -919,7 +932,7 @@
 		};
 		1F7DE0CF2A0FFFE0009D6289 /* DevDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-AgilworldDemo-AgilworldDemoTests.debug.xcconfig */;
+			baseConfigurationReference = DFADFACC02ED0E7DBC64C3A0 /* Pods-AgilworldDemo-AgilworldDemoTests.devdebug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -947,7 +960,6 @@
 		};
 		1F7DE0D02A0FFFF2009D6289 /* StagingDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AgilworldDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1020,7 +1032,7 @@
 		};
 		1F7DE0D12A0FFFF2009D6289 /* StagingDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AgilworldDemo.debug.xcconfig */;
+			baseConfigurationReference = EFD1D9AABD5124BFBAAA41B1 /* Pods-AgilworldDemo.stagingdebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1034,7 +1046,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "1.0-Staging";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1051,7 +1063,7 @@
 		};
 		1F7DE0D22A0FFFF2009D6289 /* StagingDebug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-AgilworldDemo-AgilworldDemoTests.debug.xcconfig */;
+			baseConfigurationReference = A5289BD3F313957C1C6F4C53 /* Pods-AgilworldDemo-AgilworldDemoTests.stagingdebug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1079,7 +1091,6 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AgilworldDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1152,7 +1163,6 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AgilworldDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
