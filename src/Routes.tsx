@@ -104,20 +104,20 @@ export default function StackNavigator(props:any): JSX.Element {
                     dispatch(setNavStates(navigationRef.getRootState()))
                 }
             }}
-            >
-                <Stack.Navigator screenOptions={{headerShown:false}} initialRouteName="Splash">
-                    <Stack.Group>
-                        {!isLoggedIn ? <Stack.Screen key="auth" name={'Auth'} component={AuthAppStack} /> :
-                        <Stack.Screen key="main" name={'Main'} component={MainAppStack} />}
-                    </Stack.Group>
-                
-                    <Stack.Group>
-                        <Stack.Screen
-                            name={'Help'}
-                            component={Help}
-                            options={{ statusBarColor:"white"}}
-                        />
-                    </Stack.Group>
-                </Stack.Navigator>
+        >
+            <Stack.Navigator screenOptions={{headerShown:false}} initialRouteName="Splash">
+                <Stack.Group>
+                    {!isLoggedIn ? <Stack.Screen key="auth" name={'Auth'} component={AuthAppStack} /> :
+                    <Stack.Screen key="main" name={'Main'} component={MainAppStack} />}
+                </Stack.Group>
+            
+                <Stack.Group>
+                    <Stack.Screen
+                        name={'Help'}
+                        component={Help}
+                        options={{ statusBarColor:"white"}}
+                    />
+                </Stack.Group>
+            </Stack.Navigator>
     </NavigationContainer>
 }
