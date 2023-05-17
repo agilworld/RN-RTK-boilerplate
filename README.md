@@ -54,6 +54,7 @@ Please create file `.env`, `.env.production` and `.env.staging` with some keys b
 ```
 API_URL=https://jsonplaceholder/api/
 CODE_PUSH_KEY=(code push key)
+ENV="development"
 GOOGLE_MAPS_API_KEY=(gmaps key)
 ONE_SIGNAL_KEY=(one signal key)
 SENTRY_DSN=(sentry dsn)
