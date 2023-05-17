@@ -11,7 +11,7 @@ import { Button } from "../Components/Button"
 import { useDispatch, useSelector } from "react-redux"
 import { getTodo, listRequest, TodoTypes } from "../Redux/todoRedux"
 import { logout } from "../Redux/userRedux"
-import Navigator from "../Libs/Navigator"
+import Navigator from "../Utils/navigator"
 
 export default function Home(props:any): JSX.Element {
     const dispatch = useDispatch()

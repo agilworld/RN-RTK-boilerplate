@@ -12,7 +12,7 @@ import {
 import { useDispatch } from 'react-redux';
 import { startup } from "./Redux/appRedux"
 import StackNavigator from './Routes';
-import Navigator from "./Libs/Navigator"
+import Navigator from "./Utils/navigator"
 
 function RootContainer(props:any): JSX.Element {
   const dispatch = useDispatch()

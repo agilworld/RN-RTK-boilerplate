@@ -5,7 +5,7 @@ import {
     Image,
     SafeAreaView 
 } from "react-native"
-import { moderateScale, scale } from "../../Libs/Scaling"
+import { moderateScale, scale } from "../../Utils/scaling"
 import RNInfo from "react-native-device-info"
 
 export default function Splash(props:any): JSX.Element {
