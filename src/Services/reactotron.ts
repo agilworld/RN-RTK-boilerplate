@@ -11,7 +11,7 @@ declare global {
 }
 
 const reactotron = Reactotron
-    .configure({ name: 'Counter POS App' })
+    .configure({ name: 'Demo App' })
     .useReactNative()
     .use(trackGlobalErrors({
         veto: frame => frame.fileName.indexOf('/node_modules/react-native/') >= 0
