@@ -17,16 +17,15 @@ import { useFonts } from "expo-font"
 import { PersistGate } from "redux-persist/integration/react"
 import { store, persistor } from "./Services/configureStore"
 import Loader from './Components/Loader';
-import RNConfig from "react-native-config"
 import { customFontsToLoad } from "./Themes"
 
 function App(): JSX.Element {
   const [ areFontsLoaded ] = useFonts(customFontsToLoad)
+  
   useEffect(()=>{
-    CodePush.sync({
-      deploymentKey:RNConfig.CODE_PUSH_KEY
-    })
+    CodePush.sync()
   },[])
+
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {

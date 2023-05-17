@@ -108,10 +108,9 @@ project.ext.envConfigFiles = [
 
 android {
     ndkVersion rootProject.ext.ndkVersion
-
     compileSdkVersion rootProject.ext.compileSdkVersion
-
     namespace "com.agilworld.demo"
+
     defaultConfig {
         applicationId "com.agilworld.demo"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -194,7 +193,7 @@ android {
             dimension "version"
             applicationIdSuffix ".staging"
             resValue "string", "build_config_package", "com.agilworld.demo"
-            // resValue "string", "CodePushDeploymentKey", project.env.get("CODE_PUSH_KEY").toString();
+            resValue "string", "CodePushDeploymentKey", project.env.get("CODE_PUSH_KEY").toString();
             versionName defaultConfig.versionName + "-Staging"
             ndk {
                 abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
