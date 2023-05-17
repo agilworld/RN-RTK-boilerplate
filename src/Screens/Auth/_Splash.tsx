@@ -13,7 +13,7 @@ export default function Splash(props:any): JSX.Element {
       setTimeout(()=>{
         //Navigator.resetToAuth("Login")
         props.navigation.navigate("Login")
-      },5000)
+      },3000)
     }, [])
     
     return (<SafeAreaView style={{flex:1}}>
