@@ -12,7 +12,7 @@
     "android:build:dev": "cd android && ./gradlew assembleDevelopmentRelease",
     "android:build:staging": "cd android && ./gradlew assembleStagingRelease",
     "android:build:production": "cd android && ./gradlew assembleProductionRelease",
-    "android:clear": "cd android && ./gradlew clean",
+    "android:clear": "cd android && rm -rf build && ./gradlew clean",
     "codepush:ios:prod": "appcenter codepush release-react -a <ownerName>/MyApp-iOS -d Production  -t '~1.1.0'",
     "codepush:ios": "appcenter codepush release-react -a <ownerName>/MyApp-iOS -d Staging  -t '~1.1.0'",
     "codepush:android:prod": "appcenter codepush release-react -a <ownerName>/MyApp-Android -d Production  -t '~1.1.0'",
