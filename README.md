@@ -65,6 +65,9 @@ SENTRY_ENVIRONMENT=production
 - Android 13 (Real Device)
 - Simulator Android 12 & 11
 
+## Misc
+If you want to manually add custom fonts both iOS Android please follow this guide: https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
+
 # References
 - Ignite Andross: https://github.com/infinitered/ignite-andross
 - Ignite latest : https://github.com/infinitered/ignite

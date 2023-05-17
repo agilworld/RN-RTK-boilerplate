@@ -5,9 +5,7 @@ import {
   SafeAreaView,
   StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
-  View,
 } from 'react-native';
 import RootContainer from './RootContainer';
 import {
@@ -16,14 +14,12 @@ import {
 import { PersistGate } from "redux-persist/integration/react"
 import { store, persistor } from "./Services/configureStore"
 import Loader from './Components/Loader';
-import RNConfig from "react-native-config"
 
 function App(): JSX.Element {
   useEffect(()=>{
-    CodePush.sync({
-      deploymentKey:RNConfig.CODE_PUSH_KEY
-    })
+    CodePush.sync()
   },[])
+
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
