@@ -131,8 +131,8 @@ export default function Login(props:any): JSX.Element {
                 <Button text={"Sign In"} style={{marginTop:25,paddingVertical:8,borderRadius:90}} onPress={onLogin} />
 
 
-                {Config.env !== "production" ? <View>
-                    <Text style={{color:colors.errorBackground}}>Not used in production</Text>
+                {Config.env !== "production" ? <View style={{marginTop:50}}>
+                    <Text style={{color:colors.palette.angry500}}>Warning: Not stable, not yet ready to production</Text>
                 </View> : null}
             </View>
         </View>
