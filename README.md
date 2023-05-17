@@ -49,7 +49,7 @@ Powerful React Native boilerplate ( Redux JS toolkit with Redux Saga )
 - CI/CD eslint
 - and more...
 
-## Env
+## Getting Started
 Please create file `.env`, `.env.production` and `.env.staging` with some keys below
 ```
 API_URL=https://jsonplaceholder/api/
@@ -59,6 +59,11 @@ ONE_SIGNAL_KEY=(one signal key)
 SENTRY_DSN=(sentry dsn)
 SENTRY_ENVIRONMENT=production
 ```
+
+## Feasibility Test
+- Android 13 (Real Device)
+- Simulator Android 12 & 11
+
 # References
 - Ignite Andross: https://github.com/infinitered/ignite-andross
 - Ignite latest : https://github.com/infinitered/ignite
