@@ -64,6 +64,7 @@ SENTRY_ENVIRONMENT=production
 ## Feasibility Test
 - Android 13 (Real Device)
 - Simulator Android 12 & 11
+- Simulator iOS 16.2
 
 ## Misc
 If you want to manually add custom fonts both iOS Android please follow this guide: https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
